@@ -50,7 +50,7 @@ body {
 }
 
 .main {/*no padding here*/
-    width: 479.952px; /*33.33% * 1440px*/
+    width: 480px; /* 479.952px => 33.33% * 1440px*/
     border-radius: 1em;
     -moz-border-radius: 1em 1em 0 0;
     background-color: white;
@@ -69,8 +69,8 @@ body {
 }
 
 .hero-img {
-    /*width: 479.952px; /*same as main width; specified in html */
-    /*height: 234.6432px; /*450px by 220px scaled to main; specified in html*/
+    /*width: 479.952px ~ 480px ;/*same as main width; specified in html */
+    /*height: 234.6432px ~ 235px ; /*450px by 220px scaled to main; specified in html*/
     display: block;
 }
 
@@ -101,7 +101,7 @@ body {
 }
 
 .section {
-    padding-block: 2em;
+    padding-block: 1.5em;
     border-radius: 0.8em;
     -moz-border-radius: 0.8em;
     background-color: var(--cl-primary-2);
@@ -118,6 +118,7 @@ body {
 }
 
 .price {
+    font-size: 1em;
     line-height: 1.5;
     grid-area: b;
     justify-self: start;
@@ -146,8 +147,9 @@ body {
 }
 
 .change {
-    font-weight: 700;
     padding: 1em;
+    font-weight: 700;
+    color: hsl( var(--cl--secondary) );
 }
 
 .change:hover {
