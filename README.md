@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/mycrochip/order-summary-component.git](https://github.com/mycrochip/order-summary-component.git)
-- Live Site URL: [https://mycrochip.github.io/order-summary-component/](https://mycrochip.github.io/order-summary-component/)
+- Solution URL: [https://github.com/mycrochip/oder-summary-component](https://github.com/mycrochip/oder-summary-component)
+- Live Site URL: [https://mycrochip.github.io/oder-summary-component/](https://mycrochip.github.io/oder-summary-component/)
 
 
 ## My process
