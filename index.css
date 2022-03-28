@@ -1,0 +1,158 @@
+
+:root {
+    --cl-primary-1: hsl(225 100% 94%);
+    --cl--secondary: 245 75% 52%; /*will need to apply an alpha value*/
+
+    --cl-primary-2: hsl(225 100% 98%); 
+    --cl--accent: 224 23% 55%; /*will need to apply an alpha value*/
+    --cl-dark: hsl(223 47% 23%);
+
+    --ff-body: 'Red Hat Display', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+    background-color: var(--cl-primary-1);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: var(--ff-body);
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.grid-column {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "a b c";
+}
+
+.shadow {    
+    box-shadow: 0 20px 30px 0 hsl( var(--cl--accent)/0.3 );
+}
+
+.main {/*no padding here*/
+    width: 479.952px; /*33.33% * 1440px*/
+    border-radius: 1em;
+    -moz-border-radius: 1em 1em 0 0;
+    background-color: white;
+    margin-inline: auto;
+    margin-block: 5%;
+    position: relative;
+}
+
+.hero-container {
+    border-radius: 1em 1em 0 0;
+    -moz-border-radius: 1em 1em 0 0;
+    height: auto;
+
+    /*This saved me a lot of image problems*/
+    overflow: hidden;
+}
+
+.hero-img {
+    /*width: 479.952px; /*same as main width; specified in html */
+    /*height: 234.6432px; /*450px by 220px scaled to main; specified in html*/
+    display: block;
+}
+
+.article {
+    padding: 3em;
+}
+
+.article-name {
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+.article-name,
+.cancel-order:hover,
+.price-name {
+    color: var(--cl-dark);
+}
+
+.description{
+    padding: 1em;
+    line-height: 1.5;
+}
+
+.cancel-order,
+.description,
+.price {
+    color: hsl( var(--cl--accent) );
+}
+
+.section {
+    padding-block: 2em;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    background-color: var(--cl-primary-2);
+}
+
+.cancel-order,
+.change:hover {
+    text-decoration: none;
+}
+
+.cancel-order,
+.price-name {
+    font-weight: 900;
+}
+
+.price {
+    line-height: 1.5;
+    grid-area: b;
+    justify-self: start;
+}
+
+.price-name {
+    display: block;
+}
+
+.btn-primary {
+    display: inline-block;
+    cursor: pointer;
+    margin-block: 2em;
+    padding-block: 1em;
+    border: none;
+    border-radius: 0.8em;
+    font-family: var(--ff-body);
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background-color: hsl( var(--cl--secondary) );
+}
+
+.btn-primary:hover {
+    background-color:  hsl( var(--cl--secondary) / 0.8);
+}
+
+.change {
+    font-weight: 700;
+    padding: 1em;
+}
+
+.change:hover {
+    color: hsl( var(--cl--secondary) / 0.8);
+}
+
+.attribution { font-size: 0.7em; }
+.attribution a { color: hsl( var(--cl--secondary)); }
